@@ -10,7 +10,5 @@ document.getElementsByClassName("pokename")
 [0].setAttribute("class", "show");
 }
 
-/*document.getElementsByClassName("poke-img")
-[0].addEventListener("mouseenter", showName);*/
 
 window.addEventListener("mousedown", setImage);

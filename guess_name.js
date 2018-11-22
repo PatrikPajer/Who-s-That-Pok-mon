@@ -1,10 +1,11 @@
 const guessBox = document.querySelector(`[name = "guessName"]`);
+
 let userGuess = "";
 
 function verifyGuess (guess) {
-	if(guess != beforePkmn) {
+	if(guess != currentPkmn.name) {
 		console.log("Wrong");
-	} else if (guess == beforePkmn) {
+	} else if (guess == currentPkmn.name) {
 		console.log("Right");
 	}
 }

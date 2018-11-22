@@ -16,6 +16,9 @@ img {
 	display: block;
 	height: 360px;
 	width: 336px;
+	padding: 5px;
+	border: solid #BADAAA 1px;
+	border-radius: 2%;
 }
 
 .incognito {
@@ -32,7 +35,7 @@ img.incognito:hover {
 
 .pokename {
 	display: block;
-	margin: auto;
+	margin: 5px auto 15px auto;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -42,6 +45,6 @@ img.incognito:hover {
 
 input {
 	display: block;
-	margin: auto;
+	margin: 10px auto;
 	max-width: 60%;
 }
