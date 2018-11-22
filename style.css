@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "PokémonGB";
+	src: url("fonts/PokemonGB.ttf") format("woff");
+}
+
+.wrapper{
+	display: flex;
+	width: 50%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+img {
+	display: block;
+	height: 360px;
+	width: 336px;
+}
+
+.incognito {
+	filter: brightness(0%);
+}
+
+img.incognito  {
+ transition: all 0.4s ease;
+}
+
+img.incognito:hover {
+	filter: brightness(100%);
+}
+
+.pokename {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-family: PokémonGB;
+	font-weight: 150;
+}
