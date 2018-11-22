@@ -32,9 +32,16 @@ img.incognito:hover {
 
 .pokename {
 	display: block;
+	margin: auto;
 	height: 100%;
 	width: 100%;
 	text-align: center;
 	font-family: PokémonGB;
 	font-weight: 150;
+}
+
+input {
+	display: block;
+	margin: auto;
+	max-width: 60%;
 }
