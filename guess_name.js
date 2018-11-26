@@ -15,7 +15,7 @@ function getGuess(e) {
 		userGuess = guessBox.value;
 		verifyGuess(userGuess);
 		guessBox.value = "";
-	}
+	} 
 }
 
 guessBox.addEventListener("keydown", getGuess);

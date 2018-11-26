@@ -16,9 +16,3 @@ fetch(getPokemonData(pkmnGen)).then(blob => blob.json()).then(data => {
 });
 }
 
-window.addEventListener("mousedown", namePkmn);
-
-namePkmn();
-setImage();
-
-
