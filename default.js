@@ -9,20 +9,27 @@ let currentSprite = "";
 function getPkmnData () {
 	let tempPKMN = {};
 	fetch(`https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random() * 151)}/`).then(blob => blob.json()).then(data => {
-		for(key in data) {
-			tempPKMN[key] = data[key];
-		}
+		currentName = data["name"];
+		currentSprite = data["sprites"]["front_default"];
 	});
-	currentName = tempPKMN.name;
-	currentSprite = tempPKMN.sprites.front_default;
+	console.log(currentName + "/n" + currentSprite);
+	setImage();
 }
-
-getPkmnData();
 
 function setImage () {
 	document.getElementsByClassName("poke-img")
 	[0].setAttribute("src", currentSprite);
 }
 
-setImage();
+let image = document.querySelector(".poke-img");
+
+function test () {
+	console.log("baf");
+	console.log("druhy");
+}
+
+image.addEventListener("mousedown", () => {
+	getPkmnData();
+	test();
+})
 
